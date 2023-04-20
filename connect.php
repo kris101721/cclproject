@@ -1,21 +1,12 @@
 <?php 
 
-$host = "ccl-project-server.mysql.database.azure.com";
-$dbusername = "kristen123";
-$dbpassword = "Pass@123";
-$dbname = "cclprojectdb";
-  
-// Create connection
+require "database/config.php";
 
-
-
-echo"
-<html>
-<body> Magic happens here         </body>
-</html>
-";
-
-}
+$conn = mysqli_init();
+mysqli_ssl_set($conn,NULL,NULL,$sslcert, NULL, NULL);
+if(!mysqli_real_connect($conn, $host, $dbusername, $dbpassword, $dbname, 3306, MYSQLI_CLIENT_SSL)){
+            die('Failed to connect to MySQL: '.mysqli_connect_error());
+        }
 
 
 
