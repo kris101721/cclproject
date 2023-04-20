@@ -46,7 +46,7 @@ if ($total==1)
             session_start();
             $_SESSION['uname'] = $uname;
             $_SESSION['rno'] = $rno;
-            header("Location:attend_stud.php");
+            header("Location: https://attendancesystem2.azurewebsites.net/attend_stud.php");
             exit();
         break;
 
@@ -54,7 +54,7 @@ if ($total==1)
             session_start();
             $_SESSION['uname'] = $uname;
             $_SESSION['rno'] = $rno;
-            header("Location:attend_fac1.php");
+            header("Location: https://attendancesystem2.azurewebsites.net/attend_fac1.php");
             exit();
         break;
 
