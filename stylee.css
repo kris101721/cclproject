@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+.hero_login{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(pics/library.png);
+    background-size:contain;
+    background-position: center;
+    position:  relative;
+    overflow:  hidden;
+    
+  }
+
+.form-box {
+  width: 380px;
+  height: 580px;
+  position: relative;
+  margin: 6% auto;
+  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+  padding: 5px;
+  overflow: hidden;
+  caret-color: #66D3FA;
+  color: grey;
+}
+.button-box {
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px #66D3FA;
+  border-radius: 30px;
+  color: white;
+}
+.toggle-btn {
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  color: #999;
+}
+#btn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: black;
+  border-radius: 30px;
+  transition: .5s;
+  
+}
+.input-group {
+  top: 90px;
+  position: absolute;
+  width: 280px;
+  transition: .5s;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+.submit-btn {
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: #66D3FA;
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+  color: black;
+}
+#login{
+   left:50px;
+}
+#register{
+     left:450px;
+}
+
+body {
+  color: grey;
+}
+
+input[type=text] {
+  
+  color: grey;
+}
