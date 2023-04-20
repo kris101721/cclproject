@@ -51,15 +51,20 @@ if ($total==1)
                              
             $_SESSION['rno'] = $rno;
                    
-                            echo"<script>alert('Login Success');document.location=' https://attendancesystem2.azurewebsites.net/attend_stud.php?rn=$rno & un=$name' </script>";
+                            echo"<script>alert('Login Success');document.location=' https://attendancesystem2.azurewebsites.net/attend_stud.php?rn=$rno & un=$uname' </script>";
                             
             exit();
         break;
 
         case "faculty":
             session_start();
+            
             $_SESSION['uname'] = $uname;
+                             
             $_SESSION['rno'] = $rno;
+                   
+                            echo"<script>alert('Login Success');document.location=' https://attendancesystem2.azurewebsites.net/attend_fac1.php?rn=$rno & un=$uname' </script>";
+                            
             header("Location: https://attendancesystem2.azurewebsites.net/attend_fac1.php");
             exit();
         break;
