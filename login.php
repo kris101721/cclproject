@@ -9,8 +9,8 @@ $dbpassword = "Pass@123";
 $dbname = "cclprojectdb";
 
 $conn = mysqli_init();
-mysqli_ssl_set($conn,NULL,NULL, "{path to CA cert}", NULL, NULL);
-mysqli_real_connect($conn, "ccl-project-server.mysql.database.azure.com", "kristen123", "{your_password}", "{your_database}", 3306, MYSQLI_CLIENT_SSL);
+mysqli_ssl_set($conn,NULL,NULL, "DigiCertGlobalRootCA.crt.pem", NULL, NULL);
+mysqli_real_connect($conn, "ccl-project-server.mysql.database.azure.com", "kristen123", "Pass@123", "cclprojectdb", 3306, MYSQLI_CLIENT_SSL);
 
 echo"
 <html>
