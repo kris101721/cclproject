@@ -2,9 +2,9 @@
 	 include("connect.php");
 	//error_reporting(0);
 	session_start();
-	$date = $_SESSION['date'];
-	$sub = $_SESSION['sub'];
-    $time = $_SESSION['time'];
+	$date = $_POST['date'];
+	$sub = $_POST['sub'];
+    $time = $_POST['time'];
 
 	 if(isset($_POST['bulk']))
 	 {
