@@ -17,6 +17,8 @@ echo"
   <body>  heloo </body>
   </html>";
 
+echo $conn;
+
 $uname = $_POST['uname'];
 $pswd1 = $_POST['pswd1'];
 
