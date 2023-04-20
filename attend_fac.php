@@ -17,12 +17,8 @@
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-window-close" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="faculty-view.html" style="color:#fff; text-decoration:none">HOME</a></li>
-                    <li><a href="admin_notes.html" style="color:#fff; text-decoration:none">NOTES</a></li>
-                    <li><a href="Assignments-faculty.php" style="color:#fff; text-decoration:none">ASSIGNMENT</a></li>
-                    <li><a href="progress-faculty.html" style="color:#fff; text-decoration:none">PROGRESS</a></li>
-                    <li><a href="announcement-faculty.php" style="color:#fff; text-decoration:none">ANNOUNCEMENTS</a></li>
-                    <li><a href="chat_bypass.php" style="color:#fff; text-decoration:none">CHAT</a></li>
+                    
+             
                     <li><a href="logout.php" style="color:#fff; text-decoration:none">LOGOUT</a></li>
                 </ul>
                 
