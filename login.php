@@ -10,8 +10,8 @@ $dbusername = "kristen123";
 $dbpassword = "Pass@123";
 $dbname = "cclprojectdb";
 
-$con = mysqli_init();
-mysqli_ssl_set($con,NULL,NULL, "{path to CA cert}", NULL, NULL);
+$conn = mysqli_init();
+mysqli_ssl_set($conn,NULL,NULL, "{path to CA cert}", NULL, NULL);
 mysqli_real_connect($conn, "ccl-project-server.mysql.database.azure.com", "kristen123", "{your_password}", "{your_database}", 3306, MYSQLI_CLIENT_SSL);
 
 $uname = $_POST['uname'];
