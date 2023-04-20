@@ -2,7 +2,7 @@
 
 
 <?php
-
+require "templates/header.php";
 require "database/config.php";
 
 $conn = mysqli_init();
@@ -62,6 +62,9 @@ else
     echo"<script>alert('Wrong Credentials.');document.location='http://localhost/Attendance_sys/LR.html'</script>";
           
 }    
+
+
+require "templates/footer.php";
 ?>
    
 
