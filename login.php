@@ -3,10 +3,7 @@
 
 <?php
 
-$host = "ccl-project-server.mysql.database.azure.com";
-$dbusername = "kristen123";
-$dbpassword = "Pass@123";
-$dbname = "cclprojectdb";
+require "database/config.php";
 
 $conn = mysqli_init();
 mysqli_ssl_set($conn,NULL,NULL, "ssl/DigiCertGlobalRootCA.crt.pem", NULL, NULL);
