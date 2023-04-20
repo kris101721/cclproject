@@ -52,6 +52,7 @@ if ($total==1)
             $_SESSION['rno'] = $rno;
                             
             header('Location: https://attendancesystem2.azurewebsites.net/attend_stud.php');
+                            ob_end_flush();
             exit();
         break;
 
