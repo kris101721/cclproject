@@ -25,9 +25,9 @@ $total =mysqli_num_rows($data);
 while($result = mysqli_fetch_assoc($data))
   {   
     $access = $result['roles'];
-        echo $access;    
+        
     $rno = $result['rno'];
-            echo $rno;
+       
   }
 
 if ($total==1)
@@ -37,15 +37,20 @@ if ($total==1)
         case "admin":
             session_start();
             $_SESSION['uname'] = $uname;
+                           
             $_SESSION['rno'] = $rno;
+                            
             header("Location:request.php");
             exit();
         break;
 
         case "student":
+            echo"im here";
             session_start();
             $_SESSION['uname'] = $uname;
+                             echo $_SESSION['uname'];
             $_SESSION['rno'] = $rno;
+                            echo $_SESSION['rno'];
             header("Location: https://attendancesystem2.azurewebsites.net/attend_stud.php");
             exit();
         break;
