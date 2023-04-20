@@ -60,8 +60,8 @@ if(!mysqli_real_connect($conn, $host, $dbusername, $dbpassword, $dbname, 3306, M
 }
     
     session_start();
-    $uname = $_SESSION['uname'];
-    $rno = $_SESSION['rno'];
+    $uname = $_GET['uname'];
+    $rno = $_GET['rn'];
     echo $uname;
     echo $rno;
     
