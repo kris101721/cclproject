@@ -1,6 +1,4 @@
-<html>
-  <body>  heloo </body>
-  </html>
+
 
 
 <?php
@@ -13,6 +11,11 @@ $dbname = "cclprojectdb";
 $conn = mysqli_init();
 mysqli_ssl_set($conn,NULL,NULL, "{path to CA cert}", NULL, NULL);
 mysqli_real_connect($conn, "ccl-project-server.mysql.database.azure.com", "kristen123", "{your_password}", "{your_database}", 3306, MYSQLI_CLIENT_SSL);
+
+echo"
+<html>
+  <body>  heloo </body>
+  </html>";
 
 $uname = $_POST['uname'];
 $pswd1 = $_POST['pswd1'];
