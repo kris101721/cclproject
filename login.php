@@ -10,7 +10,7 @@ mysqli_ssl_set($conn,NULL,NULL,$sslcert, NULL, NULL);
 if(!mysqli_real_connect($conn, $host, $dbusername, $dbpassword, $dbname, 3306, MYSQLI_CLIENT_SSL)){
             die('Failed to connect to MySQL: '.mysqli_connect_error());
         }else{
-echo "Successful";
+
 }
 
 $uname = $_POST['uname'];
@@ -45,12 +45,12 @@ if ($total==1)
         break;
 
         case "student":
-            echo"im here";
+            
             session_start();
             $_SESSION['uname'] = $uname;
-                             echo $_SESSION['uname'];
+                             
             $_SESSION['rno'] = $rno;
-                            echo $_SESSION['rno'];
+                            
             header('Location: https://attendancesystem2.azurewebsites.net/attend_stud.php');
             exit();
         break;
