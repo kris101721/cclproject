@@ -107,7 +107,7 @@
 		
         <!-- <form id="register" class="input-group" action="bulk_attend.php" method="POST"> -->
 		
-        <button type='submit' class='submit-btn' name='bulk' >Mark Attendance </button>
+        <button  ><a href="https://attendancesystem2.azurewebsites.net/bulk_attend.php?dt=$date & sub=$sub & ti=$time">Mark Attendance </button>
 
 
 
