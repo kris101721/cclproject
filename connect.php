@@ -12,7 +12,7 @@ mysqli_real_connect($conn, "ccl-project-server.mysql.database.azure.com", "krist
 
 if (mysqli_connect_errno($conn)) {
 echo"Connection Failed";
-
+}
 ?>
 
 
