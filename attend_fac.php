@@ -104,9 +104,9 @@
    
     ?>
         </table>
-	<input type="hidden" id="additional_var1" name="date" value="<?php $date ?>">
- 	 <input type="hidden" id="additional_var2" name="sub" value="<?php $sub ?>">
-	 <input type="hidden" id="additional_var2" name="time" value="<?php $time ?>">
+	<input type="hidden" id="additional_var1" name="date" value="<?php echo $date; ?>">
+ 	 <input type="hidden" id="additional_var2" name="sub" value="<?php echo $sub; ?>">
+	 <input type="hidden" id="additional_var2" name="time" value="<?php echo $time; ?>">
 		
         <!-- <form id="register" class="input-group" action="bulk_attend.php" method="POST"> -->
 		
