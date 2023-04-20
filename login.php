@@ -28,7 +28,7 @@ if ($total==1)
             session_start();
             $_SESSION['uname'] = $uname;
             $_SESSION['rno'] = $rno;
-            header("Location: http://localhost/Attendance_sys/request.php");
+            header("Location:request.php");
             exit();
         break;
 
@@ -36,7 +36,7 @@ if ($total==1)
             session_start();
             $_SESSION['uname'] = $uname;
             $_SESSION['rno'] = $rno;
-            header("Location: http://localhost/Attendance_sys/attend_stud.php");
+            header("Location:attend_stud.php");
             exit();
         break;
 
@@ -44,7 +44,7 @@ if ($total==1)
             session_start();
             $_SESSION['uname'] = $uname;
             $_SESSION['rno'] = $rno;
-            header("Location: http://localhost/Attendance_sys/attend_fac1.php");
+            header("Location:attend_fac1.php");
             exit();
         break;
 
