@@ -51,7 +51,7 @@ if ($total==1)
                              
             $_SESSION['rno'] = $rno;
                    
-                            echo"<script>alert('Login Success');document.location=' https://attendancesystem2.azurewebsites.net/attend_stud.php?rn=$result[rno] </script>";
+                            echo"<script>alert('Login Success');document.location=' https://attendancesystem2.azurewebsites.net/attend_stud.php?rn=$rno & un=$name' </script>";
                             
             exit();
         break;
