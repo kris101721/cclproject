@@ -26,7 +26,7 @@
 		}
 		else
 			echo"<script>alert('Something went wrong');document.location='attend_fac1.php'</script>";
-	 
+	 }
 
 	 
 	?>
