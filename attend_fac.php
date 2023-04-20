@@ -86,8 +86,7 @@
                     <td>" . $sub . "</td>
                     <td>" . $time . "</td>
                     
-                    <td><a href='present.php?rn=$result[rno]  & dt=$date & sb=$sub & tm=$time' style='color:#fff;    text-decoration:none'>Mark Present</a></td>
-                    <td><a href='absent.php?rn=$result[rno]  & dt=$date' & sb=$sub & tm=$time' style='color:#fff;    text-decoration:none'>Mark Absent</a></td>   
+                     
                 </tr>"
                  ;
                 
@@ -105,7 +104,9 @@
    
     ?>
         </table>
-
+	<input type="hidden" id="additional_var1" name="date" value="<?php $date ?>">
+ 	 <input type="hidden" id="additional_var2" name="sub" value="<?php $sub ?>">
+	 <input type="hidden" id="additional_var2" name="time" value="<?php $time ?>">
 		
         <!-- <form id="register" class="input-group" action="bulk_attend.php" method="POST"> -->
 		
