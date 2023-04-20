@@ -17,12 +17,12 @@
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-window-close" onclick="hideMenu()"></i>
                 <ul>
-                    <!-- <li><a href="faculty-view.html" style="color:#fff; text-decoration:none">HOME</a></li>
+                    <li><a href="faculty-view.html" style="color:#fff; text-decoration:none">HOME</a></li>
                     <li><a href="admin_notes.html" style="color:#fff; text-decoration:none">NOTES</a></li>
                     <li><a href="Assignments-faculty.php" style="color:#fff; text-decoration:none">ASSIGNMENT</a></li>
                     <li><a href="progress-faculty.html" style="color:#fff; text-decoration:none">PROGRESS</a></li>
                     <li><a href="announcement-faculty.php" style="color:#fff; text-decoration:none">ANNOUNCEMENTS</a></li>
-                    <li><a href="chat_bypass.php" style="color:#fff; text-decoration:none">CHAT</a></li> -->
+                    <li><a href="chat_bypass.php" style="color:#fff; text-decoration:none">CHAT</a></li>
                     <li><a href="logout.php" style="color:#fff; text-decoration:none">LOGOUT</a></li>
                 </ul>
                 
@@ -48,7 +48,7 @@
             <th> Date </th>
             <th> Subject </th>
             <th> Time</th>
-            <!-- <th colspan="2"> Mark Attendance </th> -->
+            <th colspan="2"> Mark Attendance </th>
             
             
             
@@ -86,6 +86,8 @@
                     <td>" . $sub . "</td>
                     <td>" . $time . "</td>
                     
+                    <td><a href='present.php?rn=$result[rno]  & dt=$date & sb=$sub & tm=$time' style='color:#fff;    text-decoration:none'>Mark Present</a></td>
+                    <td><a href='absent.php?rn=$result[rno]  & dt=$date' & sb=$sub & tm=$time' style='color:#fff;    text-decoration:none'>Mark Absent</a></td>   
                 </tr>"
                  ;
                 
@@ -107,7 +109,7 @@
 		
         <!-- <form id="register" class="input-group" action="bulk_attend.php" method="POST"> -->
 		
-       <button type='submit' class='submit-btn' name='bulk' >Mark Attendance </button>
+        <button type='submit' class='submit-btn' name='bulk' >Mark Attendance </button>
 
 
 
