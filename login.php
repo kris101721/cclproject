@@ -50,7 +50,7 @@ if ($total==1)
             $_SESSION['uname'] = $uname;
                              
             $_SESSION['rno'] = $rno;
-                            
+                   ob_start();         
             header('Location: https://attendancesystem2.azurewebsites.net/attend_stud.php');
                             ob_end_flush();
                             die();
