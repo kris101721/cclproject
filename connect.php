@@ -9,9 +9,11 @@ $dbname = "cclprojectdb";
 
 
 
-echo"<html>
-<body> Hellooo </body>
-</html>";
+echo"
+<html>
+<body> Magic happens here         </body>
+</html>
+";
 
 }
 
