@@ -2,9 +2,9 @@
 	 include("connect.php");
 	//error_reporting(0);
 	session_start();
-	$date = $_SESSION['date'];
-	$sub = $_SESSION['sub'];
-    $time = $_SESSION['time'];
+	$date = $_GET['dt'];
+	$sub = $_GET['sub'];
+    $time = $_GET['ti'];
 
 	 if(isset($_POST['bulk']))
 	 {
@@ -26,7 +26,7 @@
 		}
 		else
 			echo"<script>alert('Something went wrong');document.location='attend_fac1.php'</script>";
-	 }
+	 
 
 	 
 	?>
