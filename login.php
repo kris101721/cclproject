@@ -21,11 +21,13 @@ $query="select * from general WHERE uname ='$uname' && pswd1='$pswd1' && status=
 $data=mysqli_query($conn,$query);
 
 $total =mysqli_num_rows($data);
-echo $total;
+
 while($result = mysqli_fetch_assoc($data))
   {   
     $access = $result['roles'];
+        echo $access;    
     $rno = $result['rno'];
+            echo $rno;
   }
 
 if ($total==1)
