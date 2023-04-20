@@ -15,14 +15,13 @@ echo "Successful";
 
 $uname = $_POST['uname'];
 $pswd1 = $_POST['pswd1'];
-echo $uname;
-echo $pswd1;
+
 
 $query="select * from general WHERE uname ='$uname' && pswd1='$pswd1' && status='accepted'";
 $data=mysqli_query($conn,$query);
 
 $total =mysqli_num_rows($data);
-
+echo $total;
 while($result = mysqli_fetch_assoc($data))
   {   
     $access = $result['roles'];
