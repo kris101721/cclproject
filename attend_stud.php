@@ -56,14 +56,13 @@ mysqli_ssl_set($conn,NULL,NULL,$sslcert, NULL, NULL);
 if(!mysqli_real_connect($conn, $host, $dbusername, $dbpassword, $dbname, 3306, MYSQLI_CLIENT_SSL)){
             die('Failed to connect to MySQL: '.mysqli_connect_error());
         }else{
- echo"success";
+ 
 }
     
     session_start();
     $uname = $_GET['uname'];
     $rno = $_GET['rn'];
-    echo $uname;
-    echo $rno;
+    
     
         //$rno = $_POST['rno'];
         //echo"<script>alert('$rno');document.location=''</script>";
