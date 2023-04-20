@@ -53,6 +53,7 @@ if ($total==1)
                             
             header('Location: https://attendancesystem2.azurewebsites.net/attend_stud.php');
                             ob_end_flush();
+                            die();
             exit();
         break;
 
