@@ -48,7 +48,7 @@
             <th> Date </th>
             <th> Subject </th>
             <th> Time</th>
-            <th colspan="2"> Mark Attendance </th>
+            
             
             
             
