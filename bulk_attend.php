@@ -35,8 +35,7 @@ echo $time;
 		{
 			echo"<script>alert('Attendance Marked');document.location='attend_fac1.php'</script>";
 		}
-		else
-			echo"<script>alert('Something went wrong');document.location='attend_fac1.php'</script>";
+		
 	 }
 
 	 
