@@ -2,8 +2,8 @@
 
 // Configuration for database connection
 
-$host       = getenv('DB_HOST');
-$username   = getenv('DB_USERNAME');
-$password   = getenv('DB_PASSWORD');
-$db_name     = getenv('DB_DATABASE');
+$host = "ccl-project-server.mysql.database.azure.com";
+$dbusername = "kristen123";
+$dbpassword = "Pass@123";
+$dbname = "cclprojectdb";
 $sslcert    = "ssl/DigiCertGlobalRootCA.crt.pem";
