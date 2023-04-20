@@ -7,8 +7,9 @@ require "database/config.php";
 
 $conn = mysqli_init();
 mysqli_ssl_set($conn,NULL,NULL,$sslcert, NULL, NULL);
-mysqli_real_connect($conn, "ccl-project-server.mysql.database.azure.com", "kristen123", "Pass@123", "cclprojectdb", 3306, MYSQLI_CLIENT_SSL);
-
+if(!mysqli_real_connect($conn, $host, $username, $password, $db_name, 3306, MYSQLI_CLIENT_SSL)){
+            die('Failed to connect to MySQL: '.mysqli_connect_error());
+        }
 
 $uname = $_POST['uname'];
 $pswd1 = $_POST['pswd1'];
