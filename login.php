@@ -1,6 +1,6 @@
 <?php
 
-require "connect.php" ;
+include("connect.php");
 
 $conn = mysqli_init();
 mysqli_ssl_set($conn,NULL,NULL, "DigiCertGlobalRootCA.crt.pem", NULL, NULL);
