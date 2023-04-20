@@ -17,7 +17,11 @@ echo"
   <body>  heloo </body>
   </html>";
 
-echo $conn;
+if($conn){
+  echo"Set";
+}else{
+  echo"Not Set";
+}
 
 $uname = $_POST['uname'];
 $pswd1 = $_POST['pswd1'];
