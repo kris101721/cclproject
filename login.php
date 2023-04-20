@@ -51,7 +51,7 @@ if ($total==1)
                              echo $_SESSION['uname'];
             $_SESSION['rno'] = $rno;
                             echo $_SESSION['rno'];
-            header("Location: https://attendancesystem2.azurewebsites.net/attend_stud.php");
+            header('Location: https://attendancesystem2.azurewebsites.net/attend_stud.php');
             exit();
         break;
 
